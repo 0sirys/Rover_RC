@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "unconnected_items|133547500|69498851|F.Cu|4|96ebbdd7-036d-4242-8326-ebd1d36eb24d|96ebbdd7-036d-4242-8326-ebd1d36eb24d",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -131,7 +136,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -509,7 +514,23 @@
     "netclass_patterns": [
       {
         "netclass": "Power",
-        "pattern": ""
+        "pattern": "+24V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Drain_Low_SideA"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Drain_Low_SideB"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Source_High_SideA"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Source_High_SideB "
       }
     ]
   },
